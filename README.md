@@ -48,8 +48,8 @@ A CUDA-capable GPU is required for training (the reference runs used a Kaggle T4
 
 
 ## 4. Limitations
-- LeJEPA training currently stands at 40 epochs against a stated target of 100, so results should be read with this in mind until
-training is extended or the choice is explicitly justified as a compute-budget constraint.
+- Due to Kaggle GPU-time budget constraints, all four models were trained for only 40 epochs. For comparison, the official LeJEPA implementation utilizes a 400-epoch schedule for a LeJEPA ResNet-50 on the same ImageNet-100 dataset.
+- ViT-S/16 is trained from scratch with no convolutional inductive bias. Unlike ResNet-50, ViT has no built-in locality/translation-equivariance prior, so random-init training typically needs much larger datasets and/or longer schedules to match CNN performance. Here ViT-S/16 is trained from scratch on ImageNet-100 (around 130k images) for 40 epochs, well below what is typically needed for ViT to be competitive without extra data.
 
 ## 5. Presentation
 Slides for presentation available at:
