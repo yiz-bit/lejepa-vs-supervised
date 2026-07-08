@@ -80,7 +80,7 @@ On 10 randomly sampled examples, both models' PCA maps generally identify the ma
 - ViT-S/16 is trained from scratch with no convolutional inductive bias. Unlike ResNet-50, ViT has no built-in locality/translation-equivariance prior, so random-init training typically needs much larger datasets and/or longer schedules to match CNN performance. Here ViT-S/16 is trained from scratch on ImageNet-100 (around 130k images) for 40 epochs, well below what is typically needed for ViT to be competitive without extra data.
 
 ## 6. Others
-Slides for presentation available at: [Google Presentation](https://docs.google.com/presentation/d/125n6tR4sknj8dUOTqht8uMD2-7R0l4q7dIWX0xGWzXI/edit?usp=sharing)
+Slides for presentation available at: [Google Drive](https://drive.google.com/drive/folders/1TPluYGZ9sT1LWR1i48szQ1-ttyMa1GHF?usp=sharing)
 
 Other result outputs available at: [Google Drive](https://drive.google.com/drive/folders/1Qa7fq7HNJPhkjzZ3ZICFKZxgNW1USivJ?usp=sharing)
 
