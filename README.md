@@ -51,11 +51,14 @@ A CUDA-capable GPU is required for training (the reference runs used a Kaggle T4
 - Due to Kaggle GPU-time budget constraints, all four models were trained for only 40 epochs. For comparison, the official LeJEPA implementation utilizes a 400-epoch schedule for a LeJEPA ResNet-50 on the same ImageNet-100 dataset.
 - ViT-S/16 is trained from scratch with no convolutional inductive bias. Unlike ResNet-50, ViT has no built-in locality/translation-equivariance prior, so random-init training typically needs much larger datasets and/or longer schedules to match CNN performance. Here ViT-S/16 is trained from scratch on ImageNet-100 (around 130k images) for 40 epochs, well below what is typically needed for ViT to be competitive without extra data.
 
-## 5. Presentation
+## 5. Others
 Slides for presentation available at:
+
+Other result outputs available at: [Google Drive](https://drive.google.com/drive/folders/1Qa7fq7HNJPhkjzZ3ZICFKZxgNW1USivJ?usp=sharing)
 
 ## References
 
+- Samira Abnar and Willem Zuidema. Quantifying attention flow in transformers, 2020.
 - Randall Balestriero and Yann LeCun. Lejepa: Provable and scalable self-supervised learning without the heuristics, 2025.
 - Mathilde Caron, Hugo Touvron, Ishan Misra, Herv´e J´egou, Julien Mairal, Piotr Bojanowski, and Armand Joulin. Emerging properties in self-supervised vision transformers, 2021.
 - Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby. An image is worth 16x16 words: Transformers for image recognition at scale, 2021.
@@ -67,3 +70,5 @@ Slides for presentation available at:
 This work relies heavily on the research presented in **LeJEPA** (Lean Joint-Embedding Predictive Architecture).
 
 Check out the official LeJEPA repository here: https://github.com/galilai-group/lejepa
+
+Check out the 100 specific classes of ImageNet-100 here: https://huggingface.co/datasets/galilai-group/imagenet100
